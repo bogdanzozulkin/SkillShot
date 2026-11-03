@@ -1,0 +1,376 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #380577;
+    color: white;
+    font-family: 'Oswald', 'Verdana', 'Arial', 'Helvetica', sans-serif;
+}
+
+
+h1, h2, h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+#wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    width: 100%;
+}
+
+header, main, footer {
+    width: 1040px;
+    margin: 0 auto;
+}
+
+header {
+    height: 120px;
+    padding-top: 10px;
+}
+
+main {
+    padding-bottom: 120px; 
+}
+
+footer {   
+    margin: -100px auto 0;
+    position: relative;
+    height: 100px;
+    clear: both;
+}
+
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.pink {
+    color: #e00404;
+}
+
+
+.h1--invisible {
+    visibility: hidden;
+}
+
+
+.content-img {
+    border: 3px solid #db0303;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+/*Главное меню*/
+#logo {
+    float: left;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    line-height: 100px;
+    font-size: 24px;
+}
+
+#logo i {
+    font-style: italic;
+}
+
+#mainnav {
+    float: right;
+    line-height: 100px;
+}
+
+#mainnav ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+#mainnav li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+#mainnav a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#mainnav a:hover {
+    text-decoration: underline;
+}
+
+#mainnav li.active a {
+    font-weight: bold;
+    border-bottom: 2px solid #d60202;
+}
+
+/*Подвалы*/
+.footer__block {
+    display: inline-block;
+    width: 335px;
+    text-transform: uppercase;
+    vertical-align: middle;
+    line-height: 100px;
+}
+
+
+.footer__block:nth-child(2) {
+    text-align: center;
+}
+
+.footer__icons {
+    display: inline-block;
+    width: 335px;
+    text-align: right;
+    vertical-align: middle;
+    line-height: 100px;
+}
+
+.footer__icons a {
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.footer__img {
+    width: 50px;
+    vertical-align: middle;
+}
+
+/*Главная*/
+.main_img-float {
+    width: 550px;
+    margin-right: 40px;
+    float: left;
+    
+}
+
+/*Услуги*/
+#panorama {
+    width: 100%;
+    height: 150px;
+    background: url(/img/83c9a9d3d2dc11f198314ab2cb67a397_1.jpeg) no-repeat center center;
+    background-size: cover;
+    margin-bottom: 30px;
+}
+
+.services {
+    padding: 35px 0;
+}
+
+.services__item {
+    float: left;
+    width: 240px;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+.services__img {
+    width: 240px;
+    margin-bottom: 15px;
+}
+
+
+.services__item a {
+    color: #f60a0a;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.services__item a:hover {
+    text-decoration: underline;
+}
+
+
+.new::after {
+    content: "new";
+    font-size: 10px;
+    vertical-align: super;
+    background-color: rgb(238, 130, 130);
+    border-radius: 2px;
+    padding: 3px;
+    margin-left: 5px;
+    text-transform: lowercase;
+}
+
+
+table.price {
+    width: 100%;
+    border: 5px solid #ffffff;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #d80303;
+}
+
+caption {
+    font-size: 24px;
+    text-align: left;
+    margin-bottom: 15px;
+    color: #fd0101;
+    text-transform: uppercase;
+}
+
+.price th, .price td {
+    border: 2px solid rgb(255, 253, 253);
+    padding: 10px;
+    vertical-align: middle;
+}
+
+
+.price th {
+    background-color: #7c0202;
+    color: white;
+    text-align: center;
+}
+
+.price td {
+    text-align: center; 
+}
+
+.price td.desc {
+    text-align: left; 
+}
+
+
+.price th:first-child {
+    width: 10%;
+}
+.price th:nth-child(2), 
+.price th:last-child {
+    width: 25%;
+}
+
+
+.price tbody tr:nth-child(even) {
+    background-color: #000000;
+}
+
+/*О нас*/
+.about-section {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.about-img {
+    width: 650px;
+    margin: 20px auto;
+    display: block;
+}
+
+.about-text {
+    text-align: justify;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/*Контакты*/
+.contacts-section {
+    text-align: center;
+    padding: 40px 0;
+    line-height: 2;
+}
+
+.contacts-section h2 {
+    margin-top: 20px;
+    color: #f60a0a;
+}
+
+.contacts-section a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Клиенты*/
+.clients-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+.client-logo {
+    width: 220px;
+    height: 120px;
+    background-color: #fff;
+    color: #380577;
+    text-align: center;
+    line-height: 120px;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 3px solid #c90303;
+}
+
+/*обратнаясвязь*/
+#contact-form {
+    max-width: 500px;
+    margin: 40px 0;
+}
+
+.form__item {
+    margin-bottom: 15px;
+}
+
+#contact-form label {
+    font-style: italic;
+    font-size: 16px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form input[type="tel"],
+#contact-form input[type="date"],
+#contact-form select,
+#contact-form textarea {
+    height: 35px;
+    width: 100%;
+    padding: 5px 10px;
+    border: 1px solid rgb(255, 6, 6);
+    background-color: #f89c9c;
+    color: #c90000;
+    font-family: inherit;
+    border-radius: 4px;
+}
+
+#contact-form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+#contact-form input[type="submit"] {
+    background-color: #ff0000;
+    color: #000000;
+    border: none;
+    padding: 10px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+#contact-form input[type="submit"]:hover {
+    background-color: #eddfff;
+}

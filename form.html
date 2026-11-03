@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обратная связь</title>
+    <link href="https://googleapis.com" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+     <style>
+        body {
+            background-image: url(img/fff88d41d2d611f1843b1a615fe93a8c_1.jpeg   ); 
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center; 
+            background-attachment: fixed;
+            background-color: #f0f0f0; 
+            margin: 0;
+            padding: 0
+             
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header class="clearfix">
+            <a href="index.html" id="logo"><span class="pink">SKILL</span> <i>shot</i></a>
+            <nav id="mainnav">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="uslugi.html">Услуги</a></li>
+                    <li><a href="aboutus.html">О нас</a></li>
+                    <li><a href="klienti.html">Клиенты</a></li>
+                    <li><a href="kontakti.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="clearfix">
+            <form action="#" method="POST" id="contact-form">
+                <div class="form__item">
+                    <label for="topic">Тема</label><br>
+                    <select name="topic" id="topic" required>
+                        <option value="1">Заказать услугу</option>
+                        <option value="2">Оставить отзыв/замечание</option>
+                        <option value="3">Предложить сотрудничество</option>
+                        <option value="4">Другое</option>
+                    </select>
+                </div>
+                <div class="form__item">
+                    <label for="name">Имя</label><br>
+                    <input type="text" name="name" id="name" placeholder="Введите ваше имя" required>
+                </div>
+
+                <div class="form__item">
+                    <label for="email">E-mail</label><br>
+                    <input type="email" name="email" id="email" placeholder="example@domain.com" required>
+                </div>
+                <div class="form__item">
+                    <label for="tel">Телефон</label><br>
+                    <input type="tel" name="tel" id="tel" placeholder="+7 (999) 999-99-99" required>
+                </div>
+                <div class="form__item">
+                    <label for="date">Желаемая дата контакта</label><br>
+                    <input type="date" name="date" id="date">
+                </div>
+                <div class="form__item">
+                    <label for="message">Текст сообщения</label><br>
+                    <textarea name="message" id="message" placeholder="Напишите ваше сообщение здесь..." required></textarea>
+                </div>
+                <div class="form__item">
+                    <input type="submit" value="Отправить">
+                </div>
+            </form>
+        </main>
+    </div>
+
+    <footer class="clearfix">
+        <p class="footer__block"><a href="form.html" style="color:white; text-decoration:none;">Написать нам &#9650;</a></p>
+        <p class="footer__block">&copy; Новая компания</p>
+        <div class="footer__icons">
+          <a href="https://ok.ru/" target="_blank"><img src="img/ok.png" alt="ok" class="footer__img"></a>
+            <a href="https://vk.com" target="_blank"><img src="img/vk.png" alt="VK" class="footer__img"></a>
+            <a href="https://mail.ru/" target="_blank"><img src="img/mailru.png" alt="mail" class="footer__img"></a>
+        </div>
+    </footer>
+</body>
+</html>
